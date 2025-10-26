@@ -1,0 +1,70 @@
+﻿<html>
+<head>
+    <title>Formularz danych w CSS</title>
+    <style>
+        input {
+            width: 60%;
+            padding: 4px;
+            margin: 3px 0;
+            box-sizing: border-box;
+            background-color: #c8f7c8;
+        }
+            input[type=text] {
+                border: 4px solid magenta;
+                border-radius: 8px;
+            }
+            input[type=submit]{
+                background-color: green;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            input[type=reset] {
+                background-color: red;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+
+    </style>
+</head>
+<body>
+    <form action="serwer.html">
+        <label for="imię"> imię:</label><br>
+        <input type="text" id="imię" name="imię"><br>
+        <label for="nazwisko"> nazwisko:</label><br>
+        <input type="text" id="nazwisko" name="nazwisko"><br>
+        <label for="datau"> data urodzenia:</label><br>
+        <input type="date" id="datau" name="datau"><br>
+        <label for="hasło"> hasło:</label><br>
+        <input type="password" id="hasło" name="hasło"><br>
+        <label for="ulica"> ulica:</label><br>
+        <input type="text" id="ulica" name="ulica"><br>
+        <label for="miasto"> miasto:</label><br>
+        <input type="text" id="miasto" name="miasto"><br>
+        <label for="email"> email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="prawo">prawo jazdy?</label>
+        <input type="checkbox" id="prawo" name="prawo" value="prawo"><br>
+        <label for="płeć"> płeć: </label><br>
+        <label for="m"> mężczyzna:</label> <input type="radio" id="m" name="płeć" value="m"><br>
+        <label for="f"> kobieta:</label> <input type="radio" id="f" name="płeć" value="f"><br>
+        <label for="x"> inne:</label> <input type="radio" id="x" name="płeć" value="x"><br>
+        <label for="uwagi"> uwagi:</label><br>
+        <input type="text" id="uwagi" name="uwagi"><br>
+        <label for="tel"> nr telefonu:</label><br>
+        <input type="tel" id="tel" name="tel"><br>
+        <label for="woj"> województwo:</label><br>
+        <input type="text" id="woj" name="woj"><br>
+        <br><input type="submit" value="Wyślij">
+        <br><input type="reset" value="Wyczyść">
+    </form>
+</body>
+</html>
