@@ -6,15 +6,27 @@
       }
     </script>
     <style>
-      .button{
+      .przycisk{
         border: 5px powderpink;
         margin: 0px;
         padding: 0px;
-        
+      }
+      .wyswietlacz{
+        border: 5px powderblue;
+        margin: 0px; 
+        padding: 0px;
+      }
+      .kalk{
+        border: 10px black; 
+        margin: 5px; 
+        padding: 0px;
       }
     </style>
   </head>
   <body>
-    <kalkulator border: 10px black margin: 5px padding: 0px></kalkulator>
+    <kalkulator class="kalk">
+      <p ID="wyswietlacz" class="wyswietlacz"></p>
+      <div></div>
+    </kalkulator>
   </body>
 </html>
