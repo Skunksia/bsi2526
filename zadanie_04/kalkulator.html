@@ -2,6 +2,7 @@
   <head>
     <title>Kalkulator w JSS</title>
     <script>
+      wysw = "";
       function dopisz(gdzie,co){
         if(typeof(co)==number){
           wysw += co;
@@ -37,8 +38,5 @@
       <div><button class="przycisk" onclick="dopisz(wysw,"/")">%</button><br><button class="przycisk" onclick="dopisz(wysw,"*")">x</button><br><button class="przycisk" onclick="dopisz(wysw,"-")">-</button><br><button class="przycisk" onclick="dopisz(wysw,"+")">+</button></div><br>
     </kalkulator>
     <div colspan="4"><button class="przycisk" background="blue" onclick="wyslij()">=</button></div>
-    <script>
-      wysw = "";
-    </script>
   </body>
 </html>
