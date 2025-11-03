@@ -3,13 +3,27 @@
     <title>Kalkulator w JSS</title>
     <script>
      const wysw = getElementById("wyswietlacz");
+      const ups = false;
       function dopisz(co){
-          wysw.value += co;        
+          if(typeOf(co)==number){
+          wysw.value += co;
+            ups = false;
+          }
+        else{
+          if(ups==true){
+            wysw.value.replace(/.$/,co);
+          }
+          else{
+            wysw.value += co;
+            ups = true;
+          }
+        }
         }
       function wyczysc(){
+        wysw.value = ""
       }
       function wyslij(){
-        
+        wysw.value = eval(wysw.value)
       }
     </script>
     <style>
