@@ -2,11 +2,9 @@
   <head>
     <title>Kalkulator w JSS</title>
     <script>
-     var wysw = "";
-      function dopisz(gdzie,co){
-          gdzie += co;
-          getElementById("wyswietlacz").value=wysw;
-        
+     const wysw = document.getElementById("wyswietlacz");
+      function dopisz(co){
+          wysw.value += co;        
         }
       
     </script>
