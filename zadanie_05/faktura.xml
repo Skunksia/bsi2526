@@ -1,0 +1,24 @@
+<xml>
+  <?xml-stylesheet type="text/xsl" href="faktura.xsl"?>
+    <faktura>
+      <tlo>faktura.jpg</tlo>
+        <wiersz ID="w1">
+          <Lp>1</Lp>
+            <nazwa>Miska</nazwa>
+            <miara>szt</miara>
+            <cena>123</cena>
+        </wiersz>
+        <wiersz ID="w2">
+          <Lp>2</Lp>
+            <nazwa>mąka</nazwa>
+            <miara>kg</miara>
+            <cena>2</cena>
+        </wiersz>
+        <wiersz ID="w3">
+          <Lp>3</Lp>
+            <nazwa>sok</nazwa>
+            <miara>szt</miara>
+            <cena>1000</cena>
+        </wiersz>
+    </faktura>
+</xml>
