@@ -22,7 +22,7 @@
     <h1>Submit Your Details</h1>
     
     <!-- Form for input -->
-    <div class="form-container">
+    <div class="form-container" id="formContainer">
         <form id="dataForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
@@ -87,6 +87,10 @@
             const displayedName = xmlDoc.getElementsByTagName('name')[0].textContent;
             const displayedEmail = xmlDoc.getElementsByTagName('email')[0].textContent;
 
+            // Hide the form
+            document.getElementById('formContainer').style.display = 'none';
+
+            // Display the submitted data
             document.getElementById('output').innerHTML = `
                 <h2>Submitted Data:</h2>
                 <p><strong>Name:</strong> ${displayedName}</p>
