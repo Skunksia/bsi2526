@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Form Input & Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>Submit Your Details</h1>
+    
+    <!-- Form for input -->
+    <div class="form-container">
+        <form id="dataForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="errorMessage" style="color: red;"></div>
+
+    <!-- Display the output -->
+    <div class="output" id="output"></div>
+
+    <script>
+        // Form submission and validation logic
+        document.getElementById('dataForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // Basic validation
+            let errorMessage = '';
+            if (name.trim() === '') {
+                errorMessage += 'Name is required.<br>';
+            }
+            if (email.trim() === '') {
+                errorMessage += 'Email is required.<br>';
+            }
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (email && !emailPattern.test(email)) {
+                errorMessage += 'Invalid email format.<br>';
+            }
+
+            // Show error messages if validation fails
+            if (errorMessage) {
+                document.getElementById('errorMessage').innerHTML = errorMessage;
+                document.getElementById('output').innerHTML = '';
+                return;
+            }
+
+            // Clear previous error message
+            document.getElementById('errorMessage').innerHTML = '';
+
+            // Create XML structure for the input data
+            const xmlData = `
+                <user>
+                    <name>${name}</name>
+                    <email>${email}</email>
+                </user>
+            `;
+
+            // Parse XML string to DOM
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlData, 'application/xml');
+
+            // Extract values from the XML and display
+            const displayedName = xmlDoc.getElementsByTagName('name')[0].textContent;
+            const displayedEmail = xmlDoc.getElementsByTagName('email')[0].textContent;
+
+            document.getElementById('output').innerHTML = `
+                <h2>Submitted Data:</h2>
+                <p><strong>Name:</strong> ${displayedName}</p>
+                <p><strong>Email:</strong> ${displayedEmail}</p>
+            `;
+        });
+    </script>
+
+</body>
+</html>
