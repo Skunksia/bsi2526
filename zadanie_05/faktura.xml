@@ -1,4 +1,3 @@
-<xml>
   <?xml-stylesheet type="text/xsl" href="faktura.xsl"?>
     <faktura>
       <tlo>faktura.jpg</tlo>
@@ -21,4 +20,3 @@
             <cena>1000</cena>
         </wiersz>
     </faktura>
-</xml>
