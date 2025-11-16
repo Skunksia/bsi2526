@@ -5,6 +5,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <head>
       </head>
       <body style="background-image:url('faktura.jpg'); background-repeat:no-repeat;">
+        Uhhh woof?
       </body>
     </html>
   </xsl:template>
