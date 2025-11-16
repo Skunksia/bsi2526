@@ -9,4 +9,5 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <body>
       </body>
     </html>
+  </xsl:template>
   </xsl:stylesheet>
