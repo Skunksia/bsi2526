@@ -11,9 +11,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <body>
         arara
         <xsl:for-each select="faktura/wiersz">
-          <p1><xsl:value-of select="nazwa" /></p1>
-          <p2><xsl:value-of select="miara" /></p2>
-          <p3><xsl:value-of select="cena" /></p3>
+          <p><xsl:value-of select="nazwa" /></p>
+          <p><xsl:value-of select="miara" /></p>
+          <p><xsl:value-of select="cena" /></p>
           <br>
         </xsl:for-each>
       </body>
