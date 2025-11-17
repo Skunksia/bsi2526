@@ -5,7 +5,7 @@
   <tlo>faktura.jpg</tlo>
   <wiersz ID="w1">
     <Lp>1</Lp>
-    <nazwa>Miska</nazwa>
+    <nazwa>miska</nazwa>
     <miara>szt</miara>
     <cena>123</cena>
   </wiersz>
