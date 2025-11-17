@@ -34,6 +34,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
           </div>
         </xsl:for-each>
+        <xsl:variable name="razemCena" select="sum(wiersz/cena)" />
+<div style="position:absolute; top:600px; left:350px;">
+  <xsl:value-of select="$razemCena"/>
+</div>
 
       </body>
     </html>
