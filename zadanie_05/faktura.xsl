@@ -9,6 +9,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </style>
       </head>
       <body>
+      <xsl:for-each select="wiersz">
         <div style="position:relative; height:25px;">
 
     <p style="position:absolute; left:0px;">
