@@ -24,11 +24,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
               <xsl:value-of select="nazwa"/>
             </p>
 
-            <p style="position:absolute; left:500px;">
+            <p style="position:absolute; left:250px;">
               <xsl:value-of select="miara"/>
             </p>
 
-            <p style="position:absolute; left:1000px;">
+            <p style="position:absolute; left:400px;">
               <xsl:value-of select="cena"/>
             </p>
 
