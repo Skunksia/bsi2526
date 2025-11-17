@@ -8,11 +8,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           body{
             background-image:url('faktura.jpg');
             background-repeat:no-repeat;
-            padding-top:200px;
+            padding-top:190px;
             padding-left:50px;
             color:black;
           }
-          div { margin-bottom:20px; }
+          div { margin-bottom:0px; }
         </style>
       </head>
       <body>
