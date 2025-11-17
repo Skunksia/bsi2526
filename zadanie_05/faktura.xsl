@@ -28,7 +28,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
               <xsl:value-of select="miara"/>
             </p>
 
-            <p style="position:absolute; left:400px;">
+            <p style="position:absolute; left:350px;">
               <xsl:value-of select="cena"/>
             </p>
 
