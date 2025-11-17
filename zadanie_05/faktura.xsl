@@ -9,7 +9,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </style>
       </head>
       <body>
-        arara
         <div style="position:relative; height:25px;">
 
     <p style="position:absolute; left:0px;">
