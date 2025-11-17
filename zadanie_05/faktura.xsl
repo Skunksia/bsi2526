@@ -10,12 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       </head>
       <body>
         arara
-        <xsl:for-each select="faktura/wiersz">
-          <p><xsl:value-of select="nazwa" /></p>
-          <p><xsl:value-of select="miara" /></p>
-          <p><xsl:value-of select="cena" /></p>
-          <br>
-        </xsl:for-each>
+        
       </body>
     </html>
   </xsl:template>
