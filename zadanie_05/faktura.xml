@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="faktura.xsl"?>
-<faktura>
+<faktura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="faktura.xsd">
   <tlo>faktura.jpg</tlo>
   <wiersz ID="w1">
     <Lp>1</Lp>
