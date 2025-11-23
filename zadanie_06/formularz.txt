@@ -1,0 +1,58 @@
+PLIK .HTML
+
+<html>
+  <head>
+    <title>Formularz danych</title>
+  </head>
+  <body>
+    <form action="formularz.php">
+      <label for="imię"> imię:</label><br>
+     <input type="text" id= "imię" name= "imię"><br>
+      <label for="nazwisko"> nazwisko:</label><br>
+      <input type="text" id= "nazwisko" name= "nazwisko"><br>
+      <label for="datau"> data urodzenia:</label><br>
+      <input type="date" id="datau" name= "datau"><br>
+      <label for="hasło"> hasło:</label><br>
+      <input type="password" id="hasło" name="hasło"><br>
+      <label for="ulica"> ulica:</label><br>
+      <input type="text" id="ulica" name="ulica"><br>
+      <label for="miasto"> miasto:</label><br>
+      <input type="text" id="miasto" name="miasto"><br>
+      <label for="email"> email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="prawo">prawo jazdy?</label>
+      <input type="checkbox" id="prawo" name="prawo" value="prawo"><br>
+      <label for="płeć"> płeć: </label><br>
+      <label for="m"> mężczyzna:</label> <input type="radio" id="m" name="płeć" value="m"><br>
+      <label for="f"> kobieta:</label> <input type="radio" id="f" name="płeć" value="f"><br>
+      <label for="x"> inne:</label> <input type="radio" id="x" name="płeć" value="x"><br>
+      <label for="uwagi"> uwagi:</label><br>
+      <input type="text" id="uwagi" name="uwagi"><br>
+      <label for="tel"> nr telefonu:</label><br>
+      <input type="tel" id="tel" name="tel"><br>
+      <label for="woj"> województwo:</label><br>
+      <input type="text" id="woj" name="woj"><br>
+      <br><input type="submit" value="Wyślij">
+      <br><input type="reset" value="Wyczyść">
+    </form>
+  </body>
+</html>
+
+PLIK .PHP
+
+<html>
+<body>
+
+Imię: <?php echo $_POST["imię"]; ?><br>
+Nazwisko: <?php echo $_POST["nazwisko"]; ?><br>
+Data Urodzenia: <?php echo $_POST["datau"]; ?><br>
+Ulica: <?php echo $_POST["ulica"]; ?><br>
+Miasto: <?php echo $_POST["miasto"]; ?><br>
+Email: <?php echo $_POST["email"]; ?><br>
+Prawo Jazdy: <?php echo $_POST["prawo"]; ?><br>
+Płeć: <?php echo $_POST["płeć"]; ?><br>
+Uwagi: <?php echo $_POST["uwagi"]; ?><br>
+Nr telefonu: <?php echo $_POST["tel"]; ?><br>
+Województwo: <?php echo $_POST["woj"]; ?><br>
+</body>
+</html>
