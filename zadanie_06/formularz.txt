@@ -5,7 +5,7 @@ PLIK .HTML
     <title>Formularz danych</title>
   </head>
   <body>
-    <form action="formularz.php">
+    <form action="formularz.php" method="POST">
       <label for="imię"> imię:</label><br>
      <input type="text" id= "imię" name= "imię"><br>
       <label for="nazwisko"> nazwisko:</label><br>
